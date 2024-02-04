@@ -256,7 +256,7 @@ nav {
     margin: 0;
   }
   .tab-content .row .card-title {
-    font-weight: 700``;
+    font-weight: 700;
   }
 }
 @media (max-width: 769px) {
