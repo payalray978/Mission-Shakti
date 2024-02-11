@@ -353,6 +353,14 @@ nav {
     left: -3.7rem;
   }
 }
+
+@media (min-width: 1366px) {
+  .adminbtn .navbar-nav .dropdown-menu {
+    /* position: static; */
+    position: absolute;
+    left: -23%;
+  }
+}
 @media (min-width: 1440px) {
   .adminbtn .navbar-nav .dropdown-menu {
     /* position: static; */
@@ -360,3 +368,4 @@ nav {
     left: -5rem;
   }
 }
+
