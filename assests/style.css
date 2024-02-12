@@ -59,17 +59,10 @@
 }
 .dropdown-menu li a:active,
 .offcanvas .navbar-nav .nav-item a.active {
-  background-color: var(--green);
-  color: var(--white) !important;
   border-bottom: 4px solid #fcc000;
 }
-/* .dropdown-toggle:hover::after {
-  background-color: white;
-  color: white;
-} */
 section {
-  /* margin: 5rem 0 0; */
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .navbar {
   background-color: var(--bgnav);
@@ -99,18 +92,7 @@ nav {
   background-color: var(--green);
   margin: 0;
 }
-/* .offcanvas-body .navbar-nav li a {
-  color: var(--green);
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-.offcanvas-body .navbar-nav li a.active,
-.offcanvas-body .navbar-nav li a:hover {
-  background-color: var(--green);
-  color: var(--white);
-  font-weight: 600;
-} */
+
 .offcanvas-title {
   height: 3rem;
   width: 7rem;
@@ -118,7 +100,6 @@ nav {
 /* main section css */
 .main-section {
   background-color: var(--mainbg);
-  /* margin-top: 70%; */
 }
 .nav-tabs {
   border: none;
@@ -166,6 +147,14 @@ nav {
 }
 #container {
   height: 400px;
+}
+.page-link {
+  color: var(--green) !important;
+}
+.active > .page-link {
+  background-color: var(--green) !important;
+  border: 1px solid var(--green) !important;
+  color: var(--white) !important;
 }
 
 .highcharts-figure {
@@ -368,4 +357,3 @@ nav {
     left: -5rem;
   }
 }
-

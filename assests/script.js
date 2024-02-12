@@ -260,3 +260,18 @@ Highcharts.chart("stackedchart", {
     },
   ],
 });
+
+new DataTable("#example");
+window.onload = function () {
+  myFunction();
+};
+// function myFunction() {
+//   var element = document.getElementsByClassName("pagination");
+//   element.classList.add("pagination-sm");
+// }
+function myFunction() {
+  var elements = document.getElementsByClassName("pagination");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].classList.add("pagination-sm");
+  }
+}
