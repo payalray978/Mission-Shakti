@@ -300,3 +300,29 @@ function myFunction() {
     );
   });
 })();
+
+// function submitForm() {
+
+//   if (validateForm()) {
+
+//     $("#exampleModal").modal("show");
+//   } else {
+
+//     alert("Please fill out all form fields");
+//   }
+// }
+
+// function validateForm() {
+
+//   var formFields = $("#myForm").find(
+//     'input[type="text"], select,input[type="email"]'
+//   );
+//   var valid = true;
+//   formFields.each(function () {
+//     if ($(this).val() === "") {
+//       valid = false;
+//       return false;
+//     }
+//   });
+//   return valid;
+// }
