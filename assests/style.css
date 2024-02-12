@@ -12,9 +12,10 @@
   --tabcolor: #7f8081;
   --mainbg: #f6f6f6;
 }
-.dropdown-toggle::after {
-  border: none;
 
+.offcanvas-body .dropdown-toggle::after {
+  border: none;
+  content: "";
   border-bottom: 2px solid var(--green);
   border-right: 2px solid var(--green);
   height: 10px;
@@ -76,9 +77,7 @@ section {
   height: 100%;
   object-fit: cover;
 }
-.container-fluid {
-  width: 98%;
-}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:visited,
@@ -342,10 +341,19 @@ nav {
     left: -3.7rem;
   }
 }
+@media (width: 1366px) {
+  .adminbtn .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -1rem;
+  }
+}
 @media (min-width: 1440px) {
   .adminbtn .navbar-nav .dropdown-menu {
     /* position: static; */
     position: absolute;
-    left: -5rem;
+    left: -2rem;
+  }
+  .container-fluid {
+    width: 98% !important;
   }
 }

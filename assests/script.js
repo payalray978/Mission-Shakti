@@ -261,6 +261,7 @@ Highcharts.chart("stackedchart", {
   ],
 });
 
+//data  table  js
 new DataTable("#example");
 window.onload = function () {
   myFunction();
@@ -275,3 +276,27 @@ function myFunction() {
     elements[i].classList.add("pagination-sm");
   }
 }
+
+// validation form
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
